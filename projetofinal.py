@@ -1,5 +1,4 @@
 #importa os modulos 
-#importa os módulos
 import os
 import shutil
 
