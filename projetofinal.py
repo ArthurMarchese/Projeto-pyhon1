@@ -17,8 +17,6 @@ def criar_pasta(caminho):
 criar_pasta("documentos/planilhas")
 criar_pasta("documentos/docs")
 
-import os
-import shutil
 
 def criar_pasta(destino):
     if not os.path.exists(destino):
