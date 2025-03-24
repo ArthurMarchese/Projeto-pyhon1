@@ -1,3 +1,11 @@
+""" Módulo 
+Programa: Projeto Final
+Descrição:  organiza arquivos nas pastas planilhas e documentos de acordo com a extensão do arquivo. O código python cria as pastas indicadas e move os arquivos para as devidas pastas.
+Autor: Arthur Cereça Marchese
+Versão: 0.0.1
+Data: 20/03/2025
+"""
+
 #importa os modulos 
 import os
 import shutil
