@@ -11,7 +11,7 @@ import os
 import shutil
 
 #processamento
-def criar_pasta(caminho):
+def criar_pasta(caminho) -> str:
     #verifica se existe uma pasta 
     if not os.path.exists(caminho):
         #cria a pasta
@@ -25,11 +25,11 @@ criar_pasta("documentos/planilhas")
 criar_pasta("documentos/docs")
 
 
-def criar_pasta(destino):
+def criar_pasta(destino) -> str:
     if not os.path.exists(destino):
         os.makedirs(destino)
 
-def mover_arquivos(origem):
+def mover_arquivos(origem) -> list:
     origem = input("Digite o caminho completo da pasta de origem: ")
 
     # Defina os caminhos para as pastas específicas para cada tipo de arquivo
@@ -37,7 +37,7 @@ def mover_arquivos(origem):
     destino_planilhas = "documentos/planilhas"  # Pasta para arquivos .xls e .xlsx
 
     # Verifica se a pasta de origem existe
-    if os.path.exists(origem):
+    if os.path.exists(origem) -> str:
         # Cria as pastas de destino, se não existirem
         criar_pasta(destino_docs)
         criar_pasta(destino_planilhas)
